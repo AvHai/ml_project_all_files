@@ -1,0 +1,41 @@
+============================================================
+FLIGHT DELAY PREDICTION MODEL REPORT
+============================================================
+
+Best Model: XGBoost
+Training Data Size: 4,655,263 samples
+Test Data Size: 1,163,816 samples
+Number of Features: 19
+
+PERFORMANCE METRICS:
+Accuracy: 0.8521
+AUC Score: 0.7836
+
+CONFUSION MATRIX:
+[[943939   7189]
+ [164932  47756]]
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+         0.0       0.85      0.99      0.92    951128
+         1.0       0.87      0.22      0.36    212688
+
+    accuracy                           0.85   1163816
+   macro avg       0.86      0.61      0.64   1163816
+weighted avg       0.85      0.85      0.81   1163816
+
+
+ALL MODEL RESULTS:
+RandomForest:
+  Accuracy: 0.8233
+  AUC Score: 0.7283
+
+XGBoost:
+  Accuracy: 0.8521
+  AUC Score: 0.7836
+
+CatBoost:
+  Accuracy: 0.8429
+  AUC Score: 0.7654
+
