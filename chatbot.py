@@ -16,7 +16,7 @@ import re
 app = FastAPI(title="Flight Information Chatbot with RAG", version="2.0.0")
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyBMxt3eimaVEqscA8l0RRhtNTcBX9ZU34Q"
+GEMINI_API_KEY = os.getenv("APIKEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-flash')
